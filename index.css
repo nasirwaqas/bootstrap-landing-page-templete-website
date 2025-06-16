@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar a {
+    color: white;
+}
+.btn {
+    background-color: black;
+}
+.nav-link {
+    color: #faf8f8 !important;
+}
+.navbar {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    padding-inline-start: 80px;
+} 
+.navbar .navbar-brand{
+    margin-left: 20px !important;
+}
+
+.consulting-heading {
+    background-color: #dff7fa;
+    border: 1.2px solid #dff7fa;
+    border-radius: 30px;
+    width: 230px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    /* Center the element horizontally */
+}
+
+.step-number {
+    position: fixed;
+    background-color: #17a2b8;
+    /* Info background color */
+    color: #ffffff;
+    /* Text color */
+    border-radius: 50%;
+    /* Fully rounded */
+    display: flex;
+    /* Flexbox for alignment */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    position: relative;
+    /* For positioning */
+    width: 60px;
+    /* Default width */
+    height: 60px;
+    /* Default height */
+    font-weight: bold;
+    /* Bold text */
+}
+
+@media screen and (max-width: 480px) {
+    .h2 {
+        font-size: 1.5rem;
+    }
+    .lead {
+        font-size: 0.9rem;
+    }
+    .step-number {
+        width: 40px;
+        /* Adjust width for small screens */
+        height: 40px;
+        /* Adjust height for small screens */
+        font-size: 0.8rem;
+        /* Adjust font size */
+    }
+    .mb-4 {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .button-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .step-number {
+        width: 50px;
+        /* Adjust width for medium screens */
+        height: 50px;
+        /* Adjust height for medium screens */
+        font-size: 1rem;
+        /* Adjust font size */
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 2024px) {
+
+    .button-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+.service-container-main {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dff7fa;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+.icon i {
+    color: #17a2b8;
+    font-size: 2rem;
+}
+
+li span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    color: #12b4d4;
+    width: 17px;
+    height: 17px;
+    border: 1.2px solid #12b4d4;
+    border-radius: 50%;
+    margin-block: 10px;
+    margin-right: 5px;
+}
+.learn-more {
+    text-decoration: none !important; /* Remove underline from anchor tag */
+    position: relative;
+    color: #12b4d4;
+}
+.learn-more span {
+
+    transition: right 0.3s, opacity 0.3s;
+}
+footer {
+    background-color: #dff7fa;
+    font-weight: 100 solid #041011; 
+}
+.footer-container {
+   color: #041011;
+}

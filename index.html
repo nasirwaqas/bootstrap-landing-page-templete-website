@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" viewport="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Layout</title>
+  <!-- Bootstrap 4 CSS -->
+   <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Font Awesome CDN for icons like fas fa-chart-line -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<!-- jQuery, Popper.js, Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top px-4">
+    <a class="navbar-brand font-weight-bold ml-3" href="#">Consulting</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarConsulting" aria-controls="navbarConsulting" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarConsulting">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active mx-2">
+                <a class="nav-link text-white" href="#hero">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="#services">Services</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="#">Why Choose Us</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="#">Pricing</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="#">Team</a>
+            </li>
+            <li class="nav-item dropdown mx-2">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownConsulting" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownConsulting">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+        </ul>
+        <a href="#" class="get-started btn btn-light bg-info mr-4">Get Started</a>
+    </div>
+</nav>
+<!-- Hero Section -->
+<section id="hero" class="py-5 bg-info d-flex align-items-center">
+    <div class="container-fluid px-5 pt-5">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 text-white">
+                <h1 class="display-4 font-weight-bold mb-4">Strategic Solutions for Business Growth</h1>
+                <p class="lead mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="button-group mb-4">
+                    <a href="#" class="btn btn-light mb-4  w-100">Get a Free Consultation</a>
+                    <a href="#" class="btn btn-outline-light mb-4 w-100">Our Services</a>
+                </div>
+                <div class="d-flex w-100">
+                    <div class="mr-4">
+                        <h2 class="font-weight-bold mb-0">15+</h2>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="mr-4">
+                        <h2 class="font-weight-bold mb-0">500+</h2>
+                        <p>Clients Worldwide</p>
+                    </div>
+                    <div>
+                        <h2 class="font-weight-bold mb-0">98%</h2>
+                        <p>Success Rate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img src="./accets/images/bussiness.jpg" alt="Business Growth" class="img-fluid rounded shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-white min-vh-100 d-flex align-items-center" style="min-height:100vh;">
+  <div class="container-fluid px-0">
+    <div class="row no-gutters align-items-stretch" style="min-height:80vh;">
+      <!-- Left Section: Image and Badge, full height/width -->
+      <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center mb-4 mb-lg-0 px-5">
+        <div class="w-100 h-100 d-flex align-items-center justify-content-center position-relative w-100 h-100">
+          <img src="./accets/images/about-potrait.jpg" alt="About Our Consulting Firm" class="img-fluid rounded shadow main-image w-100 h-100" style="object-fit: cover;">
+          <div class="position-absolute d-flex justify-content-end align-items-end" style="bottom: 0; right: 0;">
+            <div class="bg-info text-white rounded  px-md-4 py-2  mb-4">
+              <span class="h3 font-weight-bold align-middle mr-2">15+</span>
+              <span class="align-middle">Years of Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right Section: About Content, full height/width -->
+      <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center mt-5 px-5" style="min-height:100%;">
+        <div class="about-content w-100 ">
+          <h1 class="font-weight-bold mb-4">We Help Businesses Reach Their Full Potential</h1>
+          <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          <p class="mb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          <div class="row">
+            <div class="col-md-6 mb-5">
+              <div class="align-items-start">
+                <span class="rounded-circle d-flex align-items-center justify-content-center  " style="width:40px;height:40px;">
+                  <i class="fas fa-chart-line fa-2x text-info"></i>
+                </span>
+                <div>
+                  <h5 class="font-weight-bold mb-2 ">Business Growth</h5>
+                  <p class="mb-0 small ">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="align-items-start">
+                <span class="rounded-circle d-flex align-items-center justify-content-center " style="width:40px;height:40px;">
+                  <i class="fas fa-lightbulb fa-2x text-info"></i>
+                </span>
+                <div>
+                  <h5 class="font-weight-bold mb-1">Innovative Solutions</h5>
+                  <p class="mb-0 small ">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="align-items-start">
+                <span class="rounded-circle d-flex align-items-center justify-content-center " style="width:40px;height:40px;">
+                  <i class="fas fa-users fa-2x text-info"></i>
+                </span>
+                <div>
+                  <h5 class="font-weight-bold mb-1" >Expert Team</h5>
+                  <p class="mb-0 small">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="align-items-start">
+                <span class="rounded-circle d-flex align-items-center justify-content-center " style="width:40px;height:40px;">
+                  <i class="fas fa-trophy fa-2x text-info"></i>
+                </span>
+                <div>
+                  <h5 class="font-weight-bold mb-1">Proven Results</h5>
+                  <p class="mb-0 small">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#about" class="btn btn-info mt-2">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Work Process Section -->
+    <section id="work-process" class="work-process px-4 ml-3">
+        <!-- Section Title Centered -->
+        <div class="text-center mb-5">
+            <p class="consulting-heading font-weight-bold mb-2 text-info bg-light-info text-center"><span>Our Consulting Process</span></p>
+            <div>
+                <h2 class="font-weight-bold mb-2 d-inline">Check Our </h2>
+                <h2 class="description-title font-weight-bold d-inline text-info">Our Consulting Process</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-stretch no-gutters">
+                <!-- Left Content -->
+                <div class="col-12 col-lg-6 d-flex mb-4 mb-lg-0 pr-5" style="min-height:100%;">
+                    <div class="our-consulting-process pl-0 ml-0">
+                        <h2 class="font-weight-bold mb-3">Our Proven Consulting Process</h2> <!-- Fixed unclosed <h4> -->
+                        <p class="lead mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <p class="mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <div class="mb-3">
+                            <a href="#contact" class="btn btn-info mr-2">Start Your Project</a>
+                            <a href="#about" class="btn btn-outline-info">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Steps List -->
+                <div class="col-12 col-lg-6 d-flex align-items-center" style="min-height:100%;">
+                    <div class="h-100 d-flex flex-column justify-content-center align-items-start position-relative w-100 pl-5">
+                        <!-- Step 01 -->
+                        <div class="d-flex align-items-start mb-0 position-relative w-100" style="min-height:100px;">
+                            <div class="step-number bg-info text-white rounded-circle d-flex align-items-center justify-content-center mr-3" style="width: 50px; height: 50px; flex-shrink: 0; font-weight: bold;">
+                                01
+                                <div class="position-absolute" style="left:50%;top:30px;width:2px;height:110px;background:#17a2b8;transform:translateX(-50%);"></div>
+                            </div>
+                            <div>
+                                <h5 class="font-weight-bold mb-1">Discovery &amp; Analysis</h5>
+                                <p class="mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                            </div>
+                        </div>
+                        <!-- Step 02 -->
+                        <div class="d-flex align-items-start mb-0 position-relative w-100" style="min-height:100px;">
+                            <div class="step-number bg-info text-white rounded-circle d-flex align-items-center justify-content-center mr-3" style="width: 50px; height: 50px; flex-shrink: 0; font-weight: bold;">
+                                02
+                                <div class="position-absolute" style="left:50%;top:30px;width:2px;height:100px;background:#17a2b8;transform:translateX(-50%);z-index:0;"></div> <!-- Fixed incorrect "=" -->
+                            </div>
+                            <div>
+                                <h5 class="font-weight-bold mb-1">Strategy Development</h5>
+                                <p class="mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                            </div>
+                        </div>
+                        <!-- Step 03 -->
+                        <div class="d-flex align-items-start mb-0 position-relative w-100" style="min-height:100px;">
+                            <div class="step-number bg-info text-white rounded-circle d-flex align-items-center justify-content-center mr-3" style="width: 50px; height: 50px; flex-shrink: 0; font-weight: bold;">
+                                03
+                                <div class="position-absolute" style="left:50%;top:30px;width:2px;height:100px;background:#17a2b8;transform:translateX(-50%);z-index:0;"></div> <!-- Fixed incorrect "=" -->
+                            </div>
+                            <div>
+                                <h5 class="font-weight-bold mb-1">Implementation</h5>
+                                <p class="mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                            </div>
+                        </div>
+                        <!-- Step 04 -->
+                        <div class="d-flex align-items-start mb-0 position-relative w-100" style="min-height:100px;">
+                            <div class="step-number bg-info text-white rounded-circle d-flex align-items-center justify-content-center mr-3" style="width: 50px; height: 50px; flex-shrink: 0; font-weight: bold;">
+                                04
+                                <div class="position-absolute" style="left:50%;top:30px;width:2px;height:100px;background:#17a2b8;transform:translateX(-50%);z-index:0;"></div> <!-- Fixed incorrect "=" -->
+                            </div>
+                            <div>
+                                <h5 class="font-weight-bold mb-1">Monitoring &amp; Optimization</h5>
+                                <p class="mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                            </div>
+                        </div>
+                        <!-- Step 05 -->
+                        <div class="d-flex align-items-start mb-0 position-relative w-100" style="min-height:100px;">
+                            <div class="step-number bg-info text-white rounded-circle d-flex align-items-center justify-content-center mr-3" style="width: 50px; height: 50px; flex-shrink: 0; font-weight: bold;">
+                                05
+                                 <div class="position-absolute" style="left:50%;top:10px;width:2px;height:55px;background:#17a2b8;transform:translateX(-50%);z-index:0;"></div>
+                            </div>
+                            <div>
+                                <h5 class="font-weight-bold mb-1">Evaluation &amp; Reporting</h5>
+                                <p class="mb-0 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light ">
+    <!-- Section Title -->
+    <div class="service-container text-center mb-5">
+        <p class="font-weight-bold text-info border-light rounded-pill text-center py-2 px-3 mx-auto d-flex justify-content-center align-items-center" style="max-width: 100px; height: 30px; background-color: #dff7fa;">
+            Services
+        </p>
+        <h2 class="text-dark">Check Our <span class="text-info font-weight-bold">Services</span></h2>
+    </div>
+
+    <div class="service-container-main container-fluid px-5">
+        <div class="row ">
+            <!-- Service 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-left">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-chart-simple fa-2xl" style="color: #17a2b8;"></i>
+                        </div>
+                        <h5 class="card-title font-weight-bold">Strategic Planning</h5>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                        <ul class="list-unstyled text-left">
+                            <li><span>&#10003;</span> Market Analysis</li>
+                            <li><span>&#10003;</span> Competitive Positioning</li>
+                            <li><span>&#10003;</span> Growth Strategies</li>
+                        </ul>
+                        <a href="service-details.html" class="learn-more color-info font-weight-bold mt-3">Learn More <span>⟶</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-left">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-briefcase fa-2xl"style="color: #17a2b8;"></i>
+                        </div>
+                        <h5 class="card-title font-weight-bold">Business Transformation</h5>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                        <ul class="list-unstyled text-left">
+                            <li><span>&#10003;</span> Process Optimization</li>
+                            <li><span>&#10003;</span> Organizational Change</li>
+                            <li><span>&#10003;</span> Digital Transformation</li>
+                        </ul>
+                        <a href="service-details.html" class="learn-more color-info font-weight-bold mt-3">Learn More <span>⟶</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-left">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-coins fa-2xl" style="color: #17a2b8;"></i>
+                        </div>
+                        <h5 class="card-title font-weight-bold">Financial Advisory</h5>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                        <ul class="list-unstyled text-left">
+                            <li><span>&#10003;</span> Financial Analysis</li>
+                            <li><span>&#10003;</span> Investment Planning</li>
+                            <li><span>&#10003;</span> Risk Management</li>
+                        </ul>
+                        <a href="service-details.html" class="learn-more color-info font-weight-bold mt-3">Learn More <span>⟶</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 4 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-left">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-users fa-2x" style="color: #17a2b8;"></i>
+                        </div>
+                        <h5 class="card-title font-weight-bold">Human Resources</h5>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                        <ul class="list-unstyled text-left">
+                            <li><span>&#10003;</span> Talent Acquisition</li>
+                            <li><span>&#10003;</span> Performance Management</li>
+                            <li><span>&#10003;</span> Leadership Development</li>
+                        </ul>
+                        <a href="service-details.html" class="learn-more color-info font-weight-bold mt-3">Learn More <span>⟶</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 5 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-left">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-laptop fa-2x" style="color: #17a2b8;"></i>
+                        </div>
+                        <h5 class="card-title font-weight-bold">Technology Consulting</h5>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                        <ul class="list-unstyled text-left">
+                            <li><span>&#10003;</span> IT Strategy</li>
+                            <li><span>&#10003;</span> System Implementation</li>
+                            <li><span>&#10003;</span> Cybersecurity</li>
+                        </ul>
+                        <a href="service-details.html" class="learn-more color-info font-weight-bold mt-3">Learn More <span>⟶</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 6 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-left">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-bullhorn fa-2xl" style="color: #17a2b8; display: flex; justify-content: center; align-items: center; background-color: #dff7fa; padding: 20px; width: 80px ; height: 80px; border-radius: 10px;"></i>
+                        </div>
+                        <h5 class="card-title font-weight-bold">Marketing Strategy</h5>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                        <ul class="list-unstyled text-left">
+                            <li><span>&#10003;</span> Brand Development</li>
+                            <li><span>&#10003;</span> Digital Marketing</li>
+                            <li><span>&#10003;</span>Market Research</li>
+                        </ul>
+                        <a href="service-details.html" class="learn-more color-info font-weight-bold mt-3">Learn More <span>⟶</span>  </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="#contact" class="btn btn-info">Request a Consultation</a>
+        </div>
+    </div>
+</section>
+<!-- ----------------------services-section--------------------- -->
+
+
+
+<!-- footer-section -->
+<!-- Footer Section -->
+<footer class="footer text-light py-5">
+    <div class="footer-container px-5">
+        <div class="row text-center text-md-left">
+            <!-- Address Section -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <h5 class="font-weight-bold mb-3">Address</h5>
+                <p><i class="fas fa-map-marker-alt text-info mr-2"></i>A108 Adam Street</p>
+                <p><i class="fas fa-city text-info mr-2"></i>New York, NY 535022</p>
+            </div>
+            <!-- Contact Section -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <h5 class="font-weight-bold mb-3">Contact</h5>
+                <p><i class="fas fa-phone-alt text-info mr-2"></i>Phone: +1 5589 55488 55</p>
+                <p><i class="fas fa-envelope text-info mr-2"></i>Email: info@example.com</p>
+            </div>
+            <!-- Opening Hours Section -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <h5 class="font-weight-bold mb-3">Opening Hours</h5>
+                <p><i class="fas fa-clock text-info mr-2"></i>Mon-Sat: 11AM - 23PM</p>
+                <p><i class="fas fa-calendar-times text-info mr-2"></i>Sunday: Closed</p>
+            </div>
+            <!-- Follow Us Section -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <h5 class="font-weight-bold mb-3">Follow Us</h5>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <a href="#" class="text-info mr-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-info mr-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-info mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-info"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-light">
+        <div class="text-center">
+            <p class="mb-0">© Copyright Consulting. All Rights Reserved</p>
+            <p class="mb-0">Designed by <a href="https://bootstrapmade.com/" class="text-info">Zactonz</a></p>
+        </div>
+    </div>
+</footer>
+<!-- ...existing code... -->
+</body>
+</html>
